@@ -106,9 +106,23 @@ span {
     margin-right: 10px;
 }
 
+@media(min-width:2000px) {
+    .top-bg {
+        height: 1500px;
+        width: 1500px;
+        top: -1000px;
+        left: -100px;
+    }
 
+    .bottom-bg {
+        height: 1500px;
+        width: 1500px;
+        bottom: -850px;
+        right: -450px;
+    }
+}
 
-@media(min-width:1400px) {
+@media(min-width:1700px) {
     .top-bg {
         height: 1500px;
         width: 1500px;
