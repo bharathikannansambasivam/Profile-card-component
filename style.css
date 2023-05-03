@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500&family=Poppins:wght@400;600&display=swap');
+
+.container {
+    background: hsl(185, 75%, 39%);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.top-bg {
+    position: absolute;
+    background-size: contain;
+    background-image: url("images/bg-pattern-top.svg");
+    background-repeat: no-repeat;
+    height: 978px;
+    width: 978px;
+    top: -528px;
+    left: -284px;
+}
+
+.bottom-bg {
+    height: 978px;
+    width: 978px;
+    position: absolute;
+    background-image: url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    right: -350px;
+    bottom: -500px;
+    background-size: cover;
+}
+
+.card {
+    background: white;
+    height: 380px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 99;
+}
+
+.bg img {
+    border-radius: 10px 10px 0 0;
+}
+
+.profile {
+    border-radius: 50px;
+    margin: 5.5rem;
+    position: fixed;
+    margin-left: 8rem;
+}
+
+.contant h3 {
+    padding: 3.5rem 3.5rem 0 3.5rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contant p {
+    padding: 10px;
+    text-align: center;
+    color: hsl(0, 0%, 59%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer {
+    margin-top: 10px;
+    border-top: 2px solid hsl(0, 4%, 75%);
+}
+
+.footer .title {
+    display: flex;
+    /* font-family: 'Fraunces', serif; */
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+    justify-content: space-between;
+    padding: 10% 10% 0 10%;
+}
+
+.footer .follower {
+    display: flex;
+    padding: 1px 10% 10% 7%;
+    justify-content: space-between;
+    font-size: 14px;
+    color: hsl(0, 0%, 59%);
+    font-family: 'Fraunces', serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+span {
+    color: hsl(0, 0%, 59%);
+    padding-left: 10px;
+}
+
+.follower p:nth-child(2) {
+    margin-right: 10px;
+}
+
+
+
+@media(min-width:1400px) {
+    .top-bg {
+        height: 1500px;
+        width: 1500px;
+        top: -800px;
+        left: -400px;
+    }
+
+    .bottom-bg {
+        height: 1500px;
+        width: 1500px;
+        bottom: -800px;
+        right: -400px;
+    }
+}
+@media(max-width:480px) {
+    .top-bg {
+        height: 400px;
+        width: 400px;
+        top: -100px;
+        left: -200px;
+    }
+
+    .bottom-bg {
+        height: 400px;
+        width: 400px;
+        bottom: -100px;
+        right: -200px;
+    }
+}
+
